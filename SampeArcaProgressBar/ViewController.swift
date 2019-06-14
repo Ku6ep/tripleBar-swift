@@ -45,10 +45,6 @@ class ViewController: UIViewController {
     }
     
     @objc func runProgress() {
-        
-        let loader = LoaderView(frame: self.view.bounds, title: "Sending ...", font: UIFont.systemFont(ofSize: 20.0, weight: .bold), titleColor: .darkGray, spinnerColor: .green)        
-        self.view.addSubview(loader)
-        
         if run {
             timer.invalidate()
         }

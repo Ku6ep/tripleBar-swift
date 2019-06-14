@@ -13,7 +13,6 @@
 		16DC064B229D50F600A228D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DC064A229D50F600A228D8 /* Assets.xcassets */; };
 		16DC064E229D50F600A228D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DC064C229D50F600A228D8 /* LaunchScreen.storyboard */; };
 		16DC0656229D513400A228D8 /* ArcaProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC0655229D513400A228D8 /* ArcaProgressView.swift */; };
-		16DC0660229E6CD800A228D8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC065F229E6CD800A228D8 /* LoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		16DC064D229D50F600A228D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16DC064F229D50F600A228D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16DC0655229D513400A228D8 /* ArcaProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcaProgressView.swift; sourceTree = "<group>"; };
-		16DC065F229E6CD800A228D8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,6 @@
 				16DC064A229D50F600A228D8 /* Assets.xcassets */,
 				16DC064C229D50F600A228D8 /* LaunchScreen.storyboard */,
 				16DC064F229D50F600A228D8 /* Info.plist */,
-				16DC065F229E6CD800A228D8 /* LoaderView.swift */,
 			);
 			path = SampeArcaProgressBar;
 			sourceTree = "<group>";
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16DC0660229E6CD800A228D8 /* LoaderView.swift in Sources */,
 				16DC0646229D50F500A228D8 /* ViewController.swift in Sources */,
 				16DC0656229D513400A228D8 /* ArcaProgressView.swift in Sources */,
 				16DC0644229D50F500A228D8 /* AppDelegate.swift in Sources */,
