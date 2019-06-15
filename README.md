@@ -10,9 +10,7 @@ Swift arc triple progress bar
 - Description labels for each arc
 
 ### Preview
-
-![](video.gif =207x)
-<img src="video.gif" alt="drawing" style="width:207px;"/>
+<img src="video.gif" alt="drawing" width="207"/>
 
 ## Usage sample
 
