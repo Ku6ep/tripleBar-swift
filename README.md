@@ -14,7 +14,7 @@ Swift arc triple progress bar
 - Description labels for each arc
 
 ### Preview
-<img src="video.gif" alt="drawing" width="207"/>
+<div align=center><img src="video.gif" alt="drawing" width="207"/></div>
 
 ## Usage sample
 
@@ -34,3 +34,11 @@ func sliderSlide(sender: UISlider) {
         progressBars.setProgressThree(to: Double(sender.value/100), withAnimation: false)
     }
  ```
+
+## Author
+
+Anton Umnitsyn, cybertor@gmail.com
+
+## License
+
+LinearProgressBar is available under the MIT license. See the LICENSE file for more info.
