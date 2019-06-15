@@ -37,9 +37,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164A0ACD22B4DF6500DF056F /* ArcaProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				16DC0655229D513400A228D8 /* ArcaProgressView.swift */,
+			);
+			path = ArcaProgressView;
+			sourceTree = "<group>";
+		};
 		16DC0637229D50F500A228D8 = {
 			isa = PBXGroup;
 			children = (
+				164A0ACD22B4DF6500DF056F /* ArcaProgressView */,
 				16DC0642229D50F500A228D8 /* SampeArcaProgressBar */,
 				16DC0641229D50F500A228D8 /* Products */,
 			);
@@ -58,7 +67,6 @@
 			children = (
 				16DC0643229D50F500A228D8 /* AppDelegate.swift */,
 				16DC0645229D50F500A228D8 /* ViewController.swift */,
-				16DC0655229D513400A228D8 /* ArcaProgressView.swift */,
 				16DC0647229D50F500A228D8 /* Main.storyboard */,
 				16DC064A229D50F600A228D8 /* Assets.xcassets */,
 				16DC064C229D50F600A228D8 /* LaunchScreen.storyboard */,

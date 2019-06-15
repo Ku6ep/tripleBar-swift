@@ -37,7 +37,7 @@ class ArcaProgressView: UIView {
         }
     }
     
-    public func setProgressSpeed(to progressConstant: Double, withAnimation: Bool, maxSpeed: Double) {
+    public func setProgressOne(to progressConstant: Double, withAnimation: Bool, maxSpeed: Double) {
         var progress: Double {
             get {
                 if progressConstant > 1 { return 1 }
@@ -70,7 +70,7 @@ class ArcaProgressView: UIView {
         timer.fire()
     }
     
-    public func setProgressPower(to progressConstant: Double, withAnimation: Bool) {
+    public func setProgressTwo(to progressConstant: Double, withAnimation: Bool) {
         var progress: Double {
             get {
                 if progressConstant > 1 { return 1 }
@@ -100,7 +100,7 @@ class ArcaProgressView: UIView {
         timer.fire()
     }
     
-    public func setProgressBattary(to progressConstant: Double, withAnimation: Bool) {
+    public func setProgressThree(to progressConstant: Double, withAnimation: Bool) {
         var progress: Double {
             get {
                 if progressConstant > 1 { return 1 }
@@ -199,7 +199,7 @@ class ArcaProgressView: UIView {
         return label
     }
     
-    private func makeSpeedTitleLabel(withText text: String) -> UILabel {
+    private func makeOneTitleLabel(withText text: String) -> UILabel {
         let label = UILabel(frame: CGRect(x: lineWidth + 15, y: self.frame.height - lineWidth - 95, width: 50, height: 40))
         label.text = text
         label.numberOfLines = 2
@@ -250,7 +250,7 @@ class ArcaProgressView: UIView {
         
     }
     
-    private func makePowerTitleLabel(withText text: String) -> UILabel {
+    private func makeTwoTitleLabel(withText text: String) -> UILabel {
         let label = UILabel(frame: CGRect(x: self.frame.width - 95, y: self.frame.height - lineWidth - 95, width: 50, height: 40))
         label.text = text
         label.numberOfLines = 2
@@ -296,7 +296,7 @@ class ArcaProgressView: UIView {
         
     }
     
-    private func makeBatTitleLabel(withText text: String) -> UILabel {
+    private func makeThreeTitleLabel(withText text: String) -> UILabel {
         let label = UILabel(frame: CGRect(x: self.frame.width/2 - 35, y: self.frame.height - lineWidth - 30, width: 70, height: 20))
         label.text = text
         label.numberOfLines = 1
@@ -313,9 +313,9 @@ class ArcaProgressView: UIView {
     private func setupView() {
         makeBar()
         self.addSubview(oneLabel)
-        self.addSubview(makeSpeedTitleLabel(withText: "First\nvalues"))
-        self.addSubview(makePowerTitleLabel(withText: "Second\nvalues"))
-        self.addSubview(makeBatTitleLabel(withText: "Third"))
+        self.addSubview(makeOneTitleLabel(withText: "First\nvalues"))
+        self.addSubview(makeTwoTitleLabel(withText: "Second\nvalues"))
+        self.addSubview(makeThreeTitleLabel(withText: "Third"))
     }
     
     //Layout Sublayers

@@ -39,9 +39,9 @@ class ViewController: UIViewController {
     }
 
     @objc func sliderSlide(sender: UISlider) {
-        progressBars.setProgressSpeed(to: Double(sender.value/100), withAnimation: false, maxSpeed: 45.0)
-        progressBars.setProgressPower(to: Double(sender.value/100), withAnimation: false)
-        progressBars.setProgressBattary(to: Double(sender.value/100), withAnimation: false)
+        progressBars.setProgressOne(to: Double(sender.value/100), withAnimation: false, maxSpeed: 45.0)
+        progressBars.setProgressTwo(to: Double(sender.value/100), withAnimation: false)
+        progressBars.setProgressThree(to: Double(sender.value/100), withAnimation: false)
     }
     
     @objc func runProgress() {
@@ -50,9 +50,9 @@ class ViewController: UIViewController {
         }
         else {
             timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { [weak self] (timer) in
-                self?.progressBars.setProgressSpeed(to: Double.random(in: 0 ... 1), withAnimation: false, maxSpeed: 45.0)
-                self?.progressBars.setProgressPower(to: Double.random(in: 0 ... 1), withAnimation: false)
-                self?.progressBars.setProgressBattary(to: Double.random(in: 0 ... 1), withAnimation: false)
+                self?.progressBars.setProgressOne(to: Double.random(in: 0 ... 1), withAnimation: false, maxSpeed: 45.0)
+                self?.progressBars.setProgressTwo(to: Double.random(in: 0 ... 1), withAnimation: false)
+                self?.progressBars.setProgressThree(to: Double.random(in: 0 ... 1), withAnimation: false)
             }
         }
         run = !run
